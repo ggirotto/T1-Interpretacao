@@ -10,9 +10,9 @@ public class Main {
 		Literal five2 = new Literal(5);
 		Literal ten = new Literal(10);
 		
-		Variavel<Integer> x = new Variavel<Integer>("x", env);
-		Variavel<Integer> y = new Variavel<Integer>("y", env);
-		Variavel<Integer> z = new Variavel<Integer>("z", env);
+		VariavelLiteral x = new VariavelLiteral("x", env);
+		VariavelLiteral y = new VariavelLiteral("y", env);
+		VariavelLiteral z = new VariavelLiteral("z", env);
 		
 		
 		Atribuicao atr1 = new Atribuicao(x, one, env);
