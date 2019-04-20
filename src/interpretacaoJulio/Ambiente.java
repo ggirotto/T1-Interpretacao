@@ -1,5 +1,7 @@
 package interpretacaoJulio;
 
+import interpretacaoJulio.Interfaces.Variavel;
+
 import java.util.HashMap;
 
 enum VarType {

@@ -1,11 +1,15 @@
-package interpretacaoJulio;
+package interpretacaoJulio.Variaveis;
+
+import interpretacaoJulio.Ambiente;
+import interpretacaoJulio.Interfaces.ExpressaoAritmetica;
+import interpretacaoJulio.Interfaces.Variavel;
 
 public class VariavelLiteral implements Variavel, ExpressaoAritmetica {
 	
 	public String associatedValue;
 	private Ambiente environment;
 	
-	VariavelLiteral(String associatedValue, Ambiente environment) {
+	public VariavelLiteral(String associatedValue, Ambiente environment) {
 		this.associatedValue = associatedValue;
 		this.environment = environment;
 	}

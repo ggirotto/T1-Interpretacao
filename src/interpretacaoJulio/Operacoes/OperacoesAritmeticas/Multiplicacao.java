@@ -1,11 +1,13 @@
-package interpretacaoJulio;
+package interpretacaoJulio.Operacoes.OperacoesAritmeticas;
+
+import interpretacaoJulio.Interfaces.ExpressaoAritmetica;
 
 public class Multiplicacao implements ExpressaoAritmetica {
 	
 	private ExpressaoAritmetica expr1;
 	private ExpressaoAritmetica expr2;
-	
-	Multiplicacao(ExpressaoAritmetica expr1, ExpressaoAritmetica expr2) {
+
+	public Multiplicacao(ExpressaoAritmetica expr1, ExpressaoAritmetica expr2) {
 		this.expr1 = expr1;
 		this.expr2 = expr2;
 	}

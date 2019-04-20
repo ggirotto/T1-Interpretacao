@@ -1,11 +1,15 @@
-package interpretacaoJulio;
+package interpretacaoJulio.Variaveis;
+
+import interpretacaoJulio.Ambiente;
+import interpretacaoJulio.Interfaces.ExpressaoBooleana;
+import interpretacaoJulio.Interfaces.Variavel;
 
 public class VariavelBoleana implements Variavel, ExpressaoBooleana {
 	
 	public String associatedValue;
 	private Ambiente environment;
 	
-	VariavelBoleana(String associatedValue, Ambiente environment) {
+	public VariavelBoleana(String associatedValue, Ambiente environment) {
 		this.associatedValue = associatedValue;
 		this.environment = environment;
 	}

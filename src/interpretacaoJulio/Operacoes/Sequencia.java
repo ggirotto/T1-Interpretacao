@@ -1,10 +1,12 @@
-package interpretacaoJulio;
+package interpretacaoJulio.Operacoes;
+
+import interpretacaoJulio.Interfaces.Operacao;
 
 public class Sequencia implements Operacao {
 	
 	private Operacao[] operations;
 	
-	Sequencia(Operacao[] operations) {
+	public Sequencia(Operacao[] operations) {
 		this.operations = operations;
 	}
 	

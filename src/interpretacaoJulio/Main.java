@@ -1,5 +1,19 @@
 package interpretacaoJulio;
 
+import interpretacaoJulio.Condicionais.If;
+import interpretacaoJulio.Condicionais.While;
+import interpretacaoJulio.Interfaces.Operacao;
+import interpretacaoJulio.Operacoes.Atribuicao;
+import interpretacaoJulio.Operacoes.Sequencia;
+import interpretacaoJulio.Operacoes.OperacoesAritmeticas.Multiplicacao;
+import interpretacaoJulio.Operacoes.OperacoesAritmeticas.Soma;
+import interpretacaoJulio.Operacoes.OperacoesAritmeticas.Subtracao;
+import interpretacaoJulio.Operacoes.OperacoesBooleanas.*;
+import interpretacaoJulio.TiposPrimitivos.Booleano;
+import interpretacaoJulio.TiposPrimitivos.Literal;
+import interpretacaoJulio.Variaveis.VariavelBoleana;
+import interpretacaoJulio.Variaveis.VariavelLiteral;
+
 public class Main {
 	
 	public static void main(String[] args) {

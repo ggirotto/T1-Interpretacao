@@ -1,11 +1,14 @@
-package interpretacaoJulio;
+package interpretacaoJulio.Operacoes.OperacoesBooleanas;
+
+import interpretacaoJulio.Interfaces.ExpressaoAritmetica;
+import interpretacaoJulio.Interfaces.ExpressaoBooleana;
 
 public class Maior implements ExpressaoBooleana {
 	
 	private ExpressaoAritmetica expr1;
 	private ExpressaoAritmetica expr2;
-	
-	Maior(ExpressaoAritmetica expr1, ExpressaoAritmetica expr2) {
+
+	public Maior(ExpressaoAritmetica expr1, ExpressaoAritmetica expr2) {
 		this.expr1 = expr1;
 		this.expr2 = expr2;
 	}

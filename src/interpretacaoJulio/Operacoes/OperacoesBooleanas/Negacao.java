@@ -1,10 +1,12 @@
-package interpretacaoJulio;
+package interpretacaoJulio.Operacoes.OperacoesBooleanas;
+
+import interpretacaoJulio.Interfaces.ExpressaoBooleana;
 
 public class Negacao implements ExpressaoBooleana {
 	
 	private ExpressaoBooleana associatedValue;
 	
-	Negacao(ExpressaoBooleana associatedValue) {
+	public Negacao(ExpressaoBooleana associatedValue) {
 		this.associatedValue = associatedValue;
 	}
 	

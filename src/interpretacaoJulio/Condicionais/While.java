@@ -1,11 +1,15 @@
-package interpretacaoJulio;
+package interpretacaoJulio.Condicionais;
+
+import interpretacaoJulio.Interfaces.ExpressaoBooleana;
+import interpretacaoJulio.Interfaces.Operacao;
+import interpretacaoJulio.Operacoes.Sequencia;
 
 public class While implements Operacao {
 
 	private ExpressaoBooleana condition;
 	private Sequencia body;
 	
-	While(ExpressaoBooleana condition, Sequencia body) {
+	public While(ExpressaoBooleana condition, Sequencia body) {
 		this.condition = condition;
 		this.body = body;
 	}

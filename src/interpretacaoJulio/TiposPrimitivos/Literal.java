@@ -1,10 +1,12 @@
-package interpretacaoJulio;
+package interpretacaoJulio.TiposPrimitivos;
+
+import interpretacaoJulio.Interfaces.ExpressaoAritmetica;
 
 public class Literal implements ExpressaoAritmetica {
 	
 	private Integer associatedValue;
 
-	Literal(Integer value) {
+	public Literal(Integer value) {
 		this.associatedValue = value;
 	}
 	

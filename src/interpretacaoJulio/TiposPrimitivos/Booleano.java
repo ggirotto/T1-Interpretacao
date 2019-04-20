@@ -1,10 +1,12 @@
-package interpretacaoJulio;
+package interpretacaoJulio.TiposPrimitivos;
+
+import interpretacaoJulio.Interfaces.ExpressaoBooleana;
 
 public class Booleano implements ExpressaoBooleana {
 	
 	private Boolean associatedValue;
 	
-	Booleano(Boolean value) {
+	public Booleano(Boolean value) {
 		this.associatedValue = value;
 	}
 	

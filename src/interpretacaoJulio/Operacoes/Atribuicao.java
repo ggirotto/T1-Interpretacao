@@ -1,4 +1,9 @@
-package interpretacaoJulio;
+package interpretacaoJulio.Operacoes;
+
+import interpretacaoJulio.Ambiente;
+import interpretacaoJulio.TiposPrimitivos.Booleano;
+import interpretacaoJulio.Interfaces.*;
+import interpretacaoJulio.TiposPrimitivos.Literal;
 
 public class Atribuicao implements Operacao {
 	
@@ -6,7 +11,7 @@ public class Atribuicao implements Operacao {
 	private Expressao expression;
 	private Ambiente environment;
 	
-	Atribuicao(Variavel associatedVar, Expressao expression, Ambiente environment) {
+	public Atribuicao(Variavel associatedVar, Expressao expression, Ambiente environment) {
 		this.associatedVar = associatedVar;
 		this.expression = expression;
 		this.environment = environment;

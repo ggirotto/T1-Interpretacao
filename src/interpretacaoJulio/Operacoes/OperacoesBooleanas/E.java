@@ -1,11 +1,13 @@
-package interpretacaoJulio;
+package interpretacaoJulio.Operacoes.OperacoesBooleanas;
+
+import interpretacaoJulio.Interfaces.ExpressaoBooleana;
 
 public class E implements ExpressaoBooleana {
 	
 	private ExpressaoBooleana expr1;
 	private ExpressaoBooleana expr2;
-	
-	E(ExpressaoBooleana expr1, ExpressaoBooleana expr2) {
+
+	public E(ExpressaoBooleana expr1, ExpressaoBooleana expr2) {
 		this.expr1 = expr1;
 		this.expr2 = expr2;
 	}
