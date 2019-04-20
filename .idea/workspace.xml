@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d937a10-abef-4c69-986b-b25b5ba19db5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/bin/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Negacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Negacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/VariavelBoleana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/VariavelBoleana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/VariavelLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/VariavelLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/While.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/While.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -23,14 +19,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Negacao.java">
+        <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="e#259#260#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="692">
+              <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -44,6 +36,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/interpretacaoJulio/Negacao.java" />
+        <option value="$PROJECT_DIR$/src/interpretacaoJulio/Main.java" />
       </list>
     </option>
   </component>
@@ -83,6 +76,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -136,7 +130,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18051118" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18051118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -144,7 +138,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23451327" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23451327" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -168,6 +162,13 @@
             <element signature="e#259#260#0" expanded="true" />
             <element signature="e#299#300#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
         </state>
       </provider>
     </entry>
