@@ -6,8 +6,101 @@ public class Main {
 		// TODO Auto-generated method stub
 
 //		whileStatement();
-		ifAndBoolStatements();
+//		ifAndBoolStatements();
+		negStatements();
 		
+	}
+
+	/*
+		This example describes the following program
+
+		a = (10 - 7) + ((3 * 0) + (1 + 2));
+		b = false;
+		base = 5;
+
+		while (!(a == 100)) {
+			if (b) {
+				a = a + base;
+			} else {
+				b = !b;
+			}
+		}
+	 */
+	private static void negStatements() {
+		Ambiente env = new Ambiente();
+
+		//// a = (10 - 7) + ((3 * 0) + (1 + 1))
+
+		// (10 - 7)
+		Subtracao sub1 = new Subtracao(new Literal(10), new Literal(7));
+		// (3 * 0)
+		Multiplicacao mult1 = new Multiplicacao(new Literal(3), new Literal(0));
+		// (1 + 2)
+		Soma sum1 = new Soma(new Literal(1), new Literal(1));
+		// ((3 * 0) + (1 + 2))
+		Soma sum2 = new Soma(mult1, sum1);
+		// (10 - 7) + ((3 * 0) + (1 + 2))
+		Soma sum3 = new Soma(sub1, sum2);
+
+		VariavelLiteral a = new VariavelLiteral("a", env);
+		Atribuicao atr1 = new Atribuicao(a, sum3, env);
+
+		//// b = false
+		VariavelBoleana b = new VariavelBoleana("b", env);
+		Atribuicao atr2 = new Atribuicao(b, new Booleano(false), env);
+
+		//// base = 5
+		VariavelLiteral base = new VariavelLiteral("base", env);
+		Atribuicao atr3 = new Atribuicao(base, new Literal(5), env);
+
+		////		while (!(a == 100)) {
+		////			if (b) {
+		////				a = a + base;
+		////			} else {
+		////				b = !b;
+		////			}
+		////		}
+
+		// !(a == 100)
+		Igual equal = new Igual(a, new Literal(100));
+		Negacao neg1 = new Negacao(equal);
+
+		// a = a + base
+		Soma sum4 = new Soma(a, base);
+		Atribuicao atr4 = new Atribuicao(a, sum4, env);
+		Operacao[] ops1 = {atr4};
+		Sequencia seq = new Sequencia(ops1);
+
+		// b = !b
+		Negacao neg2 = new Negacao(b);
+		Atribuicao atr5 = new Atribuicao(b, neg2, env);
+		Operacao[] ops2 = {atr5};
+		Sequencia seq2 = new Sequencia(ops2);
+
+		////		if (b) {
+		////			a = a + base;
+		////		} else {
+		////			b = !b;
+		////		}
+
+		If ifStatement = new If(b, seq, seq2);
+
+		Operacao[] ops3 = {ifStatement};
+		Sequencia seq3 = new Sequencia(ops3);
+		While whileStatement = new While(neg1, seq3);
+
+		//// Running
+		// First run all attributions
+		// a = (10 - 7) + ((3 * 0) + (1 + 2));
+		// b = false;
+		// base = 5;
+		Operacao[] ops4 = {atr1, atr2, atr3};
+		Sequencia seq4 = new Sequencia(ops4);
+
+		seq4.computa();
+
+		// Now run the While Statement
+		whileStatement.computa();
 	}
 
 	/*
