@@ -12,12 +12,14 @@ public class VariavelBoleana implements Variavel, ExpressaoBooleana {
 	
 	@Override
 	public Boolean computa() {
-		return environment.getBooleano(this);
+		System.out.println("Avaliando variável booleana ");
+		Boolean result = environment.getBooleano(this);
+		System.out.println("Avaliando variável booleana no valor " + result);
+		return result;
 	}
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
+		return associatedValue;
 	}
 }

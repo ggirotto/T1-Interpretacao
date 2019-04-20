@@ -12,12 +12,14 @@ public class VariavelLiteral implements Variavel, ExpressaoAritmetica {
 	
 	@Override
 	public Integer computa() {
-		return environment.getLiteral(this);
+		System.out.println("Avaliando variável literal ");
+		Integer result = environment.getLiteral(this);
+		System.out.println("Avaliando variável literal no valor " + result);
+		return result;
 	}
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
+		return associatedValue;
 	}
 }

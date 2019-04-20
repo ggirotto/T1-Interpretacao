@@ -18,12 +18,12 @@ public class Ambiente {
 	
 	public void addLiteral(Variavel var, Integer value) {
 		literalEnvironment.put(var, value);
-		System.out.println("Associei o literal " + value + "à variável " + var);
+		System.out.println("Associei o literal " + value + " à variável " + var);
 	}
 	
 	public void addBooleano(Variavel var, Boolean value) {
 		booleanEnvironment.put(var, value);
-		System.out.println("Associei o booleano " + value + "à variável " + var);
+		System.out.println("Associei o booleano " + value + " à variável " + var);
 	}
 	
 	public Integer getLiteral(Variavel key) {

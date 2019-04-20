@@ -32,4 +32,9 @@ public class Atribuicao implements Operacao {
 			environment.addBooleano(associatedVar, result);
 		}
 	}
+	
+	@Override
+	public String toString() {
+		return associatedVar.toString() + " = " + expression.toString();
+	}
 }
