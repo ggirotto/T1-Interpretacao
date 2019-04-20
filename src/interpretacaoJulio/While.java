@@ -14,7 +14,7 @@ public class While implements Operacao {
 	public void computa() {
 		System.out.println("Avaliando While com condicao " + condition.toString() + " e corpo " + body.toString());
 		Boolean conditionResult = condition.computa();
-		System.out.println("Expressao do While avaliada em " + conditionResult);
+		System.out.println("Condição do While avaliada em " + conditionResult);
 		if (conditionResult) {
 			body.computa();
 			computa();

@@ -2,15 +2,15 @@ package interpretacaoJulio;
 
 public class Negacao implements ExpressaoBooleana {
 	
-	private Boolean associatedValue;
+	private ExpressaoBooleana associatedValue;
 	
-	Negacao(Boolean associatedValue) {
+	Negacao(ExpressaoBooleana associatedValue) {
 		this.associatedValue = associatedValue;
 	}
 	
 	@Override
 	public Boolean computa() {
-		return !associatedValue;
+		return !associatedValue.computa();
 	}
 	
 	@Override

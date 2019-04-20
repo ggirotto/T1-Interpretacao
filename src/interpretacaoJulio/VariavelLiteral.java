@@ -12,9 +12,9 @@ public class VariavelLiteral implements Variavel, ExpressaoAritmetica {
 	
 	@Override
 	public Integer computa() {
-		System.out.println("Avaliando variável literal ");
+		System.out.println("Avaliando variável literal " + this.associatedValue);
 		Integer result = environment.getLiteral(this);
-		System.out.println("Avaliando variável literal no valor " + result);
+		System.out.println("Avaliada variável literal " + this.associatedValue + " no valor " + result);
 		return result;
 	}
 	

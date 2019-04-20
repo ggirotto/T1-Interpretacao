@@ -12,9 +12,9 @@ public class VariavelBoleana implements Variavel, ExpressaoBooleana {
 	
 	@Override
 	public Boolean computa() {
-		System.out.println("Avaliando variável booleana ");
+		System.out.println("Avaliando variável booleana " + this.associatedValue);
 		Boolean result = environment.getBooleano(this);
-		System.out.println("Avaliando variável booleana no valor " + result);
+		System.out.println("Avaliando variável booleana " + this.associatedValue + " no valor " + result);
 		return result;
 	}
 	
