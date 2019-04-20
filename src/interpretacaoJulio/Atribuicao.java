@@ -2,11 +2,11 @@ package interpretacaoJulio;
 
 public class Atribuicao implements Operacao {
 	
-	private String associatedVar;
+	private Variavel associatedVar;
 	private Expressao expression;
 	private Ambiente environment;
 	
-	Atribuicao(String associatedVar, Expressao expression, Ambiente environment) {
+	Atribuicao(Variavel associatedVar, Expressao expression, Ambiente environment) {
 		this.associatedVar = associatedVar;
 		this.expression = expression;
 		this.environment = environment;
