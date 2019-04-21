@@ -115,6 +115,8 @@ public class Main {
 
 		// Now run the While Statement
 		whileStatement.computa();
+
+		System.out.println(env.toString());
 	}
 
 	/*
@@ -205,6 +207,8 @@ public class Main {
 
 		// Then the If Statement
 		ifStatement.computa();
+
+		System.out.println(env.toString());
 	}
 
 	/*
@@ -252,6 +256,8 @@ public class Main {
 		Sequencia finalSeq = new Sequencia(finalOps);
 
 		finalSeq.computa();
+
+		System.out.println(env.toString());
 	}
 
 }

@@ -1,8 +1,8 @@
 package interpretacaoJulio;
 
 import interpretacaoJulio.Interfaces.Variavel;
-
 import java.util.HashMap;
+import java.util.Map;
 
 enum VarType {
 	Literal, Booleano
@@ -13,7 +13,7 @@ public class Ambiente {
 	private HashMap<Variavel, Integer> literalEnvironment;
 	private HashMap<Variavel, Boolean> booleanEnvironment;
 	
-	Ambiente() {
+	public Ambiente() {
 		this.literalEnvironment = new HashMap<Variavel, Integer>();
 		this.booleanEnvironment = new HashMap<Variavel, Boolean>();
 	}
@@ -42,17 +42,18 @@ public class Ambiente {
 		}
 		return VarType.Booleano;
 	}
-	
-//	public Variavel getAssociatedVar(String value) {
-//		for (Variavel searchKey : literalEnvironment.keySet()) {
-//			if (searchKey.associatedValue == value) { return searchKey; }
-//		}
-//		
-//		for (Variavel searchKey : booleanEnvironment.keySet()) {
-//			if (searchKey.associatedValue == value) { return searchKey; }
-//		}
-//		
-//		System.out.println("NUNCA DEVE CAIR AQUI!");
-//		return new Variavel("DASDASDA", this);
-//	}
+
+	@Override
+	public String toString() {
+		String message = "";
+		message += "######################################\n";
+		message += "Estado das variáveis do ambiente\n";
+		for (Map.Entry<Variavel, Integer> entry : literalEnvironment.entrySet()) {
+			message += "Variável " + entry.getKey().toString() + " avaliada em " + entry.getValue().toString() + "\n";
+		}
+		for (Map.Entry<Variavel, Boolean> entry : booleanEnvironment.entrySet()) {
+			message += "Variável " + entry.getKey().toString() + " avaliada em " + entry.getValue().toString() + "\n";
+		}
+		return message;
+	}
 }

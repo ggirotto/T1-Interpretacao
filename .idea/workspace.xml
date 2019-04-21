@@ -2,36 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d937a10-abef-4c69-986b-b25b5ba19db5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/META-INF/interpretacaoJulio.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Interfaces/Variavel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Ambiente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Ambiente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Atribuicao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Operacoes/Atribuicao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Booleano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/TiposPrimitivos/Booleano.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Divisao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Operacoes/OperacoesAritmeticas/Divisao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/E.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Operacoes/OperacoesBooleanas/E.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Expressao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Interfaces/Expressao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/ExpressaoAritmetica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Interfaces/ExpressaoAritmetica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/ExpressaoBooleana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Interfaces/ExpressaoBooleana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/If.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Condicionais/If.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Igual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Operacoes/OperacoesBooleanas/Igual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Literal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/TiposPrimitivos/Literal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Maior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Operacoes/OperacoesBooleanas/Maior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Menor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Operacoes/OperacoesBooleanas/Menor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Multiplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Operacoes/OperacoesAritmeticas/Multiplicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Negacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Operacoes/OperacoesBooleanas/Negacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Operacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Interfaces/Operacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Ou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Operacoes/OperacoesBooleanas/Ou.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Sequencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Operacoes/Sequencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Soma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Operacoes/OperacoesAritmeticas/Soma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Subtracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Operacoes/OperacoesAritmeticas/Subtracao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Tree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/Variavel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/VariavelBoleana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Variaveis/VariavelBoleana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/VariavelLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Variaveis/VariavelLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpretacaoJulio/While.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpretacaoJulio/Condicionais/While.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -46,11 +19,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Variaveis/VariavelLiteral.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Ambiente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            <state relative-caret-position="355">
+              <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="933">
+              <caret line="259" column="43" selection-start-line="259" selection-start-column="43" selection-end-line="259" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Interfaces/Variavel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -64,7 +61,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/interpretacaoJulio/Negacao.java" />
-        <option value="$PROJECT_DIR$/src/interpretacaoJulio/Main.java" />
         <option value="$PROJECT_DIR$/src/interpretacaoJulio/OperacoesAritmeticas/Subtracao.java" />
         <option value="$PROJECT_DIR$/src/interpretacaoJulio/OperacoesAritmeticas/Soma.java" />
         <option value="$PROJECT_DIR$/src/interpretacaoJulio/OperacoesAritmeticas/Multiplicacao.java" />
@@ -83,6 +79,8 @@
         <option value="$PROJECT_DIR$/src/interpretacaoJulio/TiposPrimitivos/Booleano.java" />
         <option value="$PROJECT_DIR$/src/interpretacaoJulio/Variaveis/VariavelBoleana.java" />
         <option value="$PROJECT_DIR$/src/interpretacaoJulio/Variaveis/VariavelLiteral.java" />
+        <option value="$PROJECT_DIR$/src/interpretacaoJulio/Ambiente.java" />
+        <option value="$PROJECT_DIR$/src/interpretacaoJulio/Main.java" />
       </list>
     </option>
   </component>
@@ -113,12 +111,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="interpretacaoJulio" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="T1-Interpretacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="T1-Interpretacao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="interpretacaoJulio" type="462c0819:PsiDirectoryNode" />
+              <item name="Ambiente.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -172,7 +177,7 @@
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18210863" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18370607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -181,7 +186,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3920354" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3920354" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -212,16 +217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -295,13 +290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Interfaces/Variavel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Operacoes/OperacoesBooleanas/Negacao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -365,10 +353,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Interfaces/Variavel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Variaveis/VariavelLiteral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="375">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Ambiente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpretacaoJulio/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="933">
+          <caret line="259" column="43" selection-start-line="259" selection-start-column="43" selection-end-line="259" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
