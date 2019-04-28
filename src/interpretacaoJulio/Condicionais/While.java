@@ -7,9 +7,9 @@ import interpretacaoJulio.Operacoes.Sequencia;
 public class While implements Operacao {
 
 	private ExpressaoBooleana condition;
-	private Sequencia body;
+	private Operacao body;
 	
-	public While(ExpressaoBooleana condition, Sequencia body) {
+	public While(ExpressaoBooleana condition, Operacao body) {
 		this.condition = condition;
 		this.body = body;
 	}

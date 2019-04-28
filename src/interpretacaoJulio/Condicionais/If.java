@@ -2,16 +2,16 @@ package interpretacaoJulio.Condicionais;
 
 import interpretacaoJulio.Interfaces.ExpressaoBooleana;
 import interpretacaoJulio.Interfaces.Operacao;
-import interpretacaoJulio.Operacoes.Sequencia;
+import interpretacaoJulio.Variaveis.VariavelBoleana;
 
 public class If implements Operacao {
 	
 	private ExpressaoBooleana condition;
-	private Sequencia bodyTrue;
-	private Sequencia bodyFalse;
+	private Operacao bodyTrue;
+	private Operacao bodyFalse;
 	
 	
-	public If(ExpressaoBooleana condition, Sequencia bodyTrue, Sequencia bodyFalse) {
+	public If(ExpressaoBooleana condition, Operacao bodyTrue, Operacao bodyFalse) {
 		this.condition = condition;
 		this.bodyTrue = bodyTrue;
 		this.bodyFalse = bodyFalse;

@@ -2,7 +2,6 @@ package interpretacaoJulio;
 
 import interpretacaoJulio.Condicionais.If;
 import interpretacaoJulio.Condicionais.While;
-import interpretacaoJulio.Interfaces.Operacao;
 import interpretacaoJulio.Operacoes.Atribuicao;
 import interpretacaoJulio.Operacoes.Sequencia;
 import interpretacaoJulio.Operacoes.OperacoesAritmeticas.Multiplicacao;
@@ -22,7 +21,15 @@ public class Main {
 //		whileStatement();
 //		ifAndBoolStatements();
 		negStatements();
+//		teste();
 		
+	}
+
+	private static void teste() {
+		Soma sum0 = new Soma(new Literal(3), new Literal(5));
+		Soma sum1 = new Soma(new Literal(4), new Literal(12));
+		Soma sum3 = new Soma(sum0, sum1);
+		sum3.computa();
 	}
 
 	/*
@@ -82,14 +89,10 @@ public class Main {
 		// a = a + base
 		Soma sum4 = new Soma(a, base);
 		Atribuicao atr4 = new Atribuicao(a, sum4, env);
-		Operacao[] ops1 = {atr4};
-		Sequencia seq = new Sequencia(ops1);
 
 		// b = !b
 		Negacao neg2 = new Negacao(b);
 		Atribuicao atr5 = new Atribuicao(b, neg2, env);
-		Operacao[] ops2 = {atr5};
-		Sequencia seq2 = new Sequencia(ops2);
 
 		////		if (b) {
 		////			a = a + base;
@@ -97,21 +100,19 @@ public class Main {
 		////			b = !b;
 		////		}
 
-		If ifStatement = new If(b, seq, seq2);
+		If ifStatement = new If(b, atr4, atr5);
 
-		Operacao[] ops3 = {ifStatement};
-		Sequencia seq3 = new Sequencia(ops3);
-		While whileStatement = new While(neg1, seq3);
+		While whileStatement = new While(neg1, ifStatement);
 
 		//// Running
 		// First run all attributions
 		// a = (10 - 7) + ((3 * 0) + (1 + 2));
 		// b = false;
 		// base = 5;
-		Operacao[] ops4 = {atr1, atr2, atr3};
-		Sequencia seq4 = new Sequencia(ops4);
+		Sequencia seq1 = new Sequencia(atr1, atr2);
+		Sequencia seq2 = new Sequencia(seq1, atr3);
 
-		seq4.computa();
+		seq2.computa();
 
 		// Now run the While Statement
 		whileStatement.computa();
@@ -175,22 +176,16 @@ public class Main {
 		Multiplicacao mul = new Multiplicacao(mult, base);
 		Atribuicao atr7 = new Atribuicao(d, mul, env);
 
-		Operacao[] ops = {atr7};
-		Sequencia seq1 = new Sequencia(ops);
-
 		// d = mult + base
 		Soma sum = new Soma(mult, base);
 		Atribuicao atr8 = new Atribuicao(d, sum, env);
-
-		Operacao[] ops2 = {atr8};
-		Sequencia seq2 = new Sequencia(ops2);
 
 		// if (c) {
 		//    d = mult * base;
 		// } else {
 		//    d = mult + base;
 		// }
-		If ifStatement = new If(c, seq1, seq2);
+		If ifStatement = new If(c, atr7, atr8);
 
 		// a = 3 > 5;
 		// b = true;
@@ -198,12 +193,15 @@ public class Main {
 		// d = 0;
 		// mult = 5;
 		// base = 5;
-		Operacao[] ops3 = {atr1, atr2, atr3, atr4, atr5, atr6};
-		Sequencia seq3 = new Sequencia(ops3);
+		Sequencia seq1 = new Sequencia(atr1, atr2);
+		Sequencia seq2 = new Sequencia(seq1, atr3);
+		Sequencia seq3 = new Sequencia(seq2, atr4);
+		Sequencia seq4 = new Sequencia(seq3, atr5);
+		Sequencia seq5 = new Sequencia(seq4, atr6);
 
 		// Running
 		// First execute the attributions
-		seq3.computa();
+		seq5.computa();
 
 		// Then the If Statement
 		ifStatement.computa();
@@ -247,15 +245,15 @@ public class Main {
 		Subtracao b2 = new Subtracao(z,new Literal(1));
 		Atribuicao atr5 = new Atribuicao(z, b2, env);
 
-		Operacao[] ops = {atr4, atr5};
-		Sequencia seq = new Sequencia(ops);
+		Sequencia seq = new Sequencia(atr4, atr5);
 
 		While w = new While(m, seq);
 
-		Operacao[] finalOps = {atr1, atr2, atr3, w};
-		Sequencia finalSeq = new Sequencia(finalOps);
+		Sequencia seq2 = new Sequencia(atr1, atr2);
+		Sequencia seq3 = new Sequencia(seq2, atr3);
+		Sequencia seq4 = new Sequencia(seq3, w);
 
-		finalSeq.computa();
+		seq4.computa();
 
 		System.out.println(env.toString());
 	}
